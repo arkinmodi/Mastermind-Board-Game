@@ -9,7 +9,7 @@ class CodeMaker:
 
     def newGame(self):
         self.attempts = 0
-        self.code = {choice(Colors) for i in range(4)}
+        self.code = [choice(Colors) for i in range(4)]
 
     def guessCode(self, guess):
         if type(guess) != list or len(guess) != 4 or not (set(guess) <= set(Colors)):
@@ -20,4 +20,3 @@ class CodeMaker:
         if black == 4: return "win"
         if self.attempts == 12: return "lose"
         return (black, white)
-        
