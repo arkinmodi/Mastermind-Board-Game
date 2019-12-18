@@ -1,6 +1,4 @@
 # Donald Knuth's Five-Guess Algorithm
-from codemaker import *
-
 Color = ['red', 'green', 'blue', 'yellow', 'purple', 'white']
 
 class CodeBreaker:
