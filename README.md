@@ -3,7 +3,7 @@ Mastermind is a code-breaking game.
 
 ## Game Rules
 The codemaker chooses a pattern of four code pegs. For this implementation 
-there will be duplicates or blanks. The codebreaker tries to guess the pattern, 
+there will be no duplicates or blanks. The codebreaker tries to guess the pattern, 
 in both order and color, within 12 turns. Once a guess has been made
 the codemaker will provide feedback in terms of black and white pegs. A black 
 key peg is placed for each code peg from the guess which is correct in both 
