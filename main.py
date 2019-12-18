@@ -35,7 +35,7 @@ else:
         if result == "lose": break
         response = "B"*result[0] + "W"*result[1] if (result[0] + result[1] > 0) else "None"
         print("response: " + response)
-        print("You have " + str(12-CodeMaker.getAttemptsLeft()) + " remaining" + '\n')
+        print("You have " + str(CodeMaker.getAttemptsLeft()) + " remaining" + '\n')
 
     if result == "lose": print("\nGame Over! The code was: " + ', '.join(CodeMaker.getCode()))
     else: print("\nYou Win")
