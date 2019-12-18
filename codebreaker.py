@@ -64,7 +64,7 @@ class CodeBreaker:
         
         guess = [Color[0], Color[0], Color[1], Color[1]]
         result = CodeMaker.guessCode(guess)
-        if result == (4,0): yield (result, guess)
+        yield (result, guess)
         
         for _ in range(11):
             if guess in possibleCodes: possibleCodes.remove(guess)
