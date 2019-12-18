@@ -58,7 +58,6 @@ class CodeBreaker:
 
 
     def run(self, CodeMaker):
-        CodeMaker.newGame()
         master = self.__createSet()
         possibleCodes = master.copy()
         
