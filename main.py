@@ -1,6 +1,12 @@
+## @file main.py
+#  @author Arkin Modi
+#  @brief Mastermind Board Game Contoller
+#  @date 12/18/2019
+
 from codemaker import *
 from codebreaker import *
 
+# gets the game mode from player
 mode = None
 while mode != '0' and mode != '1':
     print(
@@ -14,6 +20,7 @@ print()
 CodeMaker = CodeMaker()
 CodeMaker.newGame()
 
+# runs Donald Knuth's Five-Guess Algorithm
 if mode == '0':
     CodeBreaker = CodeBreaker().run(CodeMaker)
     result = (None, None)
