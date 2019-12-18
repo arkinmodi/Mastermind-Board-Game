@@ -1,5 +1,5 @@
 # Mastermind Board Game
-Mastermind is a code-breaking game for two players.
+Mastermind is a code-breaking game.
 
 ## Game Rules
 The codemaker chooses a pattern of four code pegs. For this implementation 
