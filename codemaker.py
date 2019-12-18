@@ -1,6 +1,7 @@
 from random import choice
 
 Colors = ['red', 'green', 'blue', 'yellow', 'purple', 'white']
+totalAttempts = 12
 
 class CodeMaker:
     def newGame(self):
@@ -13,8 +14,11 @@ class CodeMaker:
         black = sum(s == g for s, g in zip(self.__code, guess))
         white = sum(min(guess.count(c), self.__code.count(c)) for c in Colors) - black
         self.__attempts += 1
-        if self.__attempts == 12: return "lose"
+        if self.__attempts == totalAttempts: return "lose"
         return (black, white)
 
     def getCode(self):
         return self.__code
+    
+    def getAttemptsLeft(self):
+        return totalAttempts - self.__attempts
