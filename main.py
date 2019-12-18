@@ -37,6 +37,7 @@ else:
         guess = guess.split(sep=', ')
         result = CodeMaker.guessCode(guess)
         if result == "lose": break
+        if result == "invalid guess": print(result); continue
         response = "B"*result[0] + "W"*result[1] if (result[0] + result[1] > 0) else "None"
         print("response: " + response)
         print("You have " + str(CodeMaker.getAttemptsLeft()) + " remaining" + '\n')
