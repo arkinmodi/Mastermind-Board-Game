@@ -1,11 +1,15 @@
 from codemaker import *
 from codebreaker import *
 
-print(
-    "Select 0 for Auto Play\n" +
-    "Select 1 for Manual Play"
-)
-mode = input()
+mode = None
+while mode != '0' and mode != '1':
+    print(
+        "Select 0 for Auto Play\n" +
+        "Select 1 for Manual Play"
+    )
+    mode = input()
+    if mode != '0' and mode != '1': print("Invalid input")
+    
 print()
 CodeMaker = CodeMaker()
 CodeMaker.newGame()
