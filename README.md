@@ -41,6 +41,8 @@ win in five.)
 
 > Note: This was copied from [Wikipedia](https://en.wikipedia.org/wiki/Mastermind_(board_game)#Five-guess_algorithm)
 
+Donald Knuth's Five-Guess Algorithm is implemented in `codebreaker.py`.
+
 ## How to Run
 To start playing run the command:
 
