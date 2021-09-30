@@ -39,14 +39,22 @@ thus the guess cannot win on the next turn, yet will be necessary to assure a
 win in five.)
 7. Repeat from step 3.
 
-> Note: This was copied from [Wikipedia](https://en.wikipedia.org/wiki/Mastermind_(board_game)#Five-guess_algorithm)
+> Source: [Wikipedia](https://en.wikipedia.org/wiki/Mastermind_(board_game)#Five-guess_algorithm)
 
 Donald Knuth's Five-Guess Algorithm is implemented in `codebreaker.py`.
 
 ## How to Run
 To start playing run the command:
 
-    python3 main.py
+```
+python3 src/main.py
+```
+
+To run using Docker:
+
+```
+docker compose run mastermind-board-game
+```
 
 The user will be prompted with a choice of either auto or manual play. Auto 
 play will execute Donald Knuth's Five-Guess Algorithm. Manual play will allow
